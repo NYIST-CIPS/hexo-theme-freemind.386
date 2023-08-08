@@ -1,5 +1,5 @@
 categories: 分类
-search: 搜索
+search: 暂时不能搜索
 tags: 标签
 tagcloud: 标签云
 tweets: 推文
@@ -9,7 +9,10 @@ comment: 留言
 archive_a: 归档
 archive_b: "归档：%s"
 page: "第 %d 页"
-recent_posts: 最新文章
+recent_news: 新闻公告
 description: 摘要
 read_more: 阅读此文
-links: 链接
+links: 相关链接
+contact_us: 联系我们
+downloads: 下载链接
+friends: 友情链接
