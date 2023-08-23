@@ -1,4 +1,4 @@
-slogan: "Keep and carry on."
+slogan: "Code Together, Soar Forever."
 
 show_heart: true
 
@@ -10,50 +10,41 @@ menu:
     intro: "All the articles."
     # icon: "fa fa-archive"
   - title: EVENTS
-    url: categories
+    url: http://cips.nyist.edu.cn/event
     intro: "All the categories."
     # icon: "fa fa-folder"
   - title: BLOG
-    url: tags
+    url: http://cips.nyist.edu.cn/blog
     intro: "All the tags."
     # icon: "fa fa-tags"
   - title: OJ
-    url: about
+    url: http://oj.nyist.edu.cn/
     intro: "About me."
     # icon: "fa fa-user"
-  - title: MIRRORS
-    url: atom.xml
-    intro: "Subscribe me."
-    # icon: "fa fa-user"
+
 
 links:
-  - title: "使用帮助"
-    url: https://github.com/wzpan/hexo-theme-freemind
-    intro: "Freemind's Github repository."
-    icon: "fa fa-github"
+  - title: "使用帮助(加急制作中)"
+    url: /help/
+    icon: "fa fa-check"
   - title: "服务器状态"
-    url: https://github.com/kristopolous/BOOTSTRA.386
-    intro: "BOOTSTRA.386's Github repository."
-    icon: "fa fa-github"
+    url: /status/#server-status
+    icon: "fa fa-cloud"
   - title: "同步状态"
-    url: https://github.com/blackshow/hexo-theme-freemind.386
-    intro: "Freemind.386's Github repository."
-    icon: "fa fa-github"
+    url: /status/#syncing-status
+    icon: "fa fa-spinner"
   - title: "南阳理工学院CIPS协会"
-    url: http://www.github.com/blackshow
-    intro: "My Github account."
+    url: http://cips.nyist.edu.cn
     icon: "fa fa-github"
   - title: "镜像管理器源码"
-    url: http://www.linkedin.com/in/xxx
-    intro: "My Linkin account."
-    icon: "fa fa-linkedin"
+    url: https://github.com/tuna/tunasync
+    icon: "fa fa-code"
   - title: "自定义镜像管理器脚本"
-    url: http://www.linkedin.com/in/xxx
-    intro: "My Linkin account."
-    icon: "fa fa-linkedin"
+    url: https://github.com/tuna/tunasync-scripts
+    icon: "fa fa-cogs"
 
 widgets:
-- search
+# - search
 # - category
 # - tagcloud
 - recent_news

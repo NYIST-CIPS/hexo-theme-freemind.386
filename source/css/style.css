@@ -611,15 +611,13 @@ code {
 }
 
 .sys-logo{
-    width: 200px;
-    height: 200px;
-    background-color: #bbb;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.sys-logo:active{
-    -webkit-box-shadow: #000 0 0 0 0;
-    box-shadow: #000 0 0 0 0;
-    margin: 10px 0 0 10px;
-    outline: #000 none;
-    background: #bbb !important;
+.sub-sys-logo{
+    width: 180px;
+    height: 150px;
+    background-color: #bbb;
 }
