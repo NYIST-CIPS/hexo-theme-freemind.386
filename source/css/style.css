@@ -9,6 +9,7 @@
 }
 
 .container-narrow>footer p {
+    margin-bottom: 0px;
     padding: 5px;
     display: inline-block;
     -webkit-border-radius: 6px;

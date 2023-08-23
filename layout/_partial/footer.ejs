@@ -1,8 +1,13 @@
-<p><% if (config.author){ %>
-  &copy; <%= new Date().getFullYear() %> <%= config.author %>
+<p>本站由 <% if (config.author){ %>
+  <%= config.author %>
   <% } else { %>
-  &copy; <%= new Date().getFullYear() %> <%= config.title %>
+  <%= config.title %>
   <% } %>
-      with help from <a href="http://hexo.io/" target="_blank">Hexo</a>,<a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>,<a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> and <a href="http://getbootstrap.com/" target="_blank">BOOTSTRA.386</a>. 
-     <br> Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind.386</a>.    
+      运行维护，南阳理工学院信息化建设与管理中心支持创办。
+</p>
+<p>本站采用Hexo网页搭建，主题来自 <a href="https://github.com/blackshow/hexo-theme-freemind.386">Freemind.386</a> ，
+  镜像管理器来自 <a href="https://github.com/tuna/tunasync">tunasync</a> 。
+</p>
+<p>本站相关源码可在 <a href="https://github.com/tuna/tunasync"><em>这里(镜像管理器)</em></a> 和
+   <a href="https://github.com/NYIST-CIPS/mirror-web-new"><em>这里(镜像站网页)</em></a> 获取。
 </p>
