@@ -610,15 +610,3 @@ code {
     width: 200px;
     height: 180px;
 }
-
-.sys-logo{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.sub-sys-logo{
-    width: 180px;
-    height: 150px;
-    background-color: #bbb;
-}
