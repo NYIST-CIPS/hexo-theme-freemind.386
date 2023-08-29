@@ -1,0 +1,81 @@
+<h1>镜像列表</h1>
+<div class="loading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<table id="mirrorListTable" class="table table-hover table-condensed" style="display: none;">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Last Update</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+    $(document).ready(function refreshMirrorList() {
+        $.getJSON("static/tunasync.json", function (data) {
+            $("#mirrorListTable tbody").empty();
+            data.sort(function (a, b) {
+                return a.name.localeCompare(b.name);
+            });
+            $.each(data, function (key, value) {
+                var row = $("<tr class='status-" + value.status + "' />");
+                row.append($("<td/>").append($("<a/>").text(value.name).attr("href", value.name)));
+                row.append($("<td/>").text(relativeTime(value.last_ended_ts)));
+                row.append($("<td/>").text(value.status));
+                $("#mirrorListTable tbody").append(row);
+                $(".loading").hide();
+                $("#mirrorListTable").show();
+            });
+        });
+        setTimeout(refreshMirrorList, 10000);
+    });
+
+    function relativeTime(timestamp) {
+        const SECOND = 1;
+        const MINUTE = SECOND * 60;
+        const HOUR = MINUTE * 60;
+        const DAY = HOUR * 24;
+        const WEEK = DAY * 7;
+        const MONTH = DAY * 30;
+        const YEAR = DAY * 365;
+
+        let elapsed = Date.now()/1000 - timestamp;
+
+        if (elapsed < MINUTE) {
+            return 'now';
+        } else if (elapsed < HOUR) {
+            return Math.floor(elapsed / MINUTE) + 'min';
+        } else if (elapsed < DAY) {
+            return Math.floor(elapsed / HOUR) + 'h';
+        } else if (elapsed < WEEK) {
+            return Math.floor(elapsed / DAY) + 'd';
+        } else if (elapsed < MONTH) {
+            return Math.floor(elapsed / WEEK) + 'w';
+        } else if (elapsed < YEAR) {
+            return Math.floor(elapsed / MONTH) + 'month';
+        } else {
+            return Math.floor(elapsed / YEAR) + 'y';
+        }
+    }
+    console.log(relativeTime(Date.now()));
+
+</script>
