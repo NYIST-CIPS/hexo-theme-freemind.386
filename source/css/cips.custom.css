@@ -33,6 +33,12 @@
   content: "";
 }
 
+@media only screen and (max-width: 600px) {
+  div.logo {
+    font-size: 75%;
+  }
+}
+
 /* loading pure css animate*/
 .loading,
 .loading>div {

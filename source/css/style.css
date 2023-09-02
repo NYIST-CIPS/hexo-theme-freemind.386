@@ -534,8 +534,9 @@ hr {
 }
 
 .logo {
-    background: url("../favicon.png") no-repeat left top;
-    background-size: 5em
+    background: url("../cips_logo.svg") no-repeat left top;
+    margin-left: 1px;
+    background-size: 4em;
 }
 
 .logo>h1 {
